@@ -1,13 +1,13 @@
 #'@title  Occurrence of compound dry-cold events
 #'
-#'@description  Take the precipitation and temperature and extract dry-cold occurrence based on thresholds.The binary variable of the dry and cold (DC) event can be otained.
+#'@description  Extract compound dry-cold occurrences based on thresholds of precipitation and temperature. The binary variable of the dry and cold (DC) event can be otained.
 #'
 #'@param mp Precipitation
 #'@param mt Temperature
 #'@param threp Threshold of precipitation (e.g., 20th percentile)
 #'@param thret Threshold of temperature (e.g., 20th percentile)
 #'@usage GetDC(mp,mt,threp,thret)
-#'@references Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes.Environ. Res. Lett., 8(3): 034014.
+#'@references Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes. Environ. Res. Lett., 8(3): 034014.
 #'@return The occurrence of compound wet-hot event (0-1 binary variable)
 #'@export
 #'@examples

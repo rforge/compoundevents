@@ -2,9 +2,9 @@
 % Please edit documentation in R/ImpactMG.R
 \name{ImpactMG}
 \alias{ImpactMG}
-\title{Impact  under droughts and hot extremes}
+\title{Impacts  under droughts and hot extremes}
 \usage{
-ImpactMG(P,T,Y)
+ImpactMG(P,T,Y,u0)
 }
 \arguments{
 \item{P}{Precipitation or drought indicator corresponding to the impact variable Y}
@@ -12,16 +12,19 @@ ImpactMG(P,T,Y)
 \item{T}{Temperature or heat indicator  corresponding to the impact variable Y}
 
 \item{Y}{Impact variable (e.g., Crop yield)}
+
+\item{u0}{Initial condition of (P,T)}
 }
 \description{
 Use the meta-Gaussian model to construct the condtional distribuiton of
-the impact variable (Y)  give drought and hot conditions P(Y|P,T)
+the impact variable (Y)  give drought and hot conditions P(Y|P,T).
 }
 \examples{
 P=matrix(rnorm(60,0,1),ncol=1)
 T=matrix(rnorm(60,0,1),ncol=1)
 Y=matrix(rnorm(60,0,1),ncol=1)
-ImpactMG(P,T,Y)
+u0=c(-1.2,1.2) # Speficify the compound dry-hot condition
+ImpactMG(P,T,Y,u0)
 
 }
 \references{

@@ -19,7 +19,7 @@ GetWH(mp,mt,threp,thret)
 The occurrence of compound wet-hot event (0-1 binary variable)
 }
 \description{
-Take the precipitation and temperature and extract wet-hot occurrence based on thresholds.The binary variable of the wet and warm (WW) event can be otained.
+Extract compound wet-hot occurrences based on thresholds of precipitation and temperature.The binary variable of the wet and warm (WW) event can be otained.
 }
 \examples{
 mp=matrix(rnorm(120,0,1),ncol=1)
@@ -29,5 +29,5 @@ thret=80
 WH<-GetWH(mp,mt,threp,thret)
 }
 \references{
-Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes.Environ. Res. Lett., 8(3): 034014.
+Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes. Environ. Res. Lett., 8(3): 034014.
 }

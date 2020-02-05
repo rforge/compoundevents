@@ -1,13 +1,13 @@
 #'@title  Occurrence of compound wet-hot events
 #'
-#'@description  Take the precipitation and temperature and extract wet-hot occurrence based on thresholds.The binary variable of the wet and warm (WW) event can be otained.
+#'@description  Extract compound wet-hot occurrences based on thresholds of precipitation and temperature.The binary variable of the wet and warm (WW) event can be otained.
 #'
 #'@param mp Precipitation
 #'@param mt Temperature
 #'@param threp Threshold of precipitation (e.g., 80th percentile)
 #'@param thret Threshold of temperature (e.g., 80th percentile)
 #'@usage GetWH(mp,mt,threp,thret)
-#'@references Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes.Environ. Res. Lett., 8(3): 034014.
+#'@references Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes. Environ. Res. Lett., 8(3): 034014.
 #'@return The occurrence of compound wet-hot event (0-1 binary variable)
 #'@export
 #'@examples

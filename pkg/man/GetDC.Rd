@@ -19,7 +19,7 @@ GetDC(mp,mt,threp,thret)
 The occurrence of compound wet-hot event (0-1 binary variable)
 }
 \description{
-Take the precipitation and temperature and extract dry-cold occurrence based on thresholds.The binary variable of the dry and cold (DC) event can be otained.
+Extract compound dry-cold occurrences based on thresholds of precipitation and temperature. The binary variable of the dry and cold (DC) event can be otained.
 }
 \examples{
 mp=matrix(rnorm(120,0,1),ncol=1)
@@ -29,5 +29,5 @@ thret=20
 DC<-GetDC(mp,mt,threp,thret)
 }
 \references{
-Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes.Environ. Res. Lett., 8(3): 034014.
+Hao, Z. et al (2013). Changes in concurrent monthly precipitation and temperature extremes. Environ. Res. Lett., 8(3): 034014.
 }

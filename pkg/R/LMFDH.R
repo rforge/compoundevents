@@ -1,22 +1,22 @@
 
-#'@title   Empirical likelihood multiplication factor (ELMF)
-#'@description   Compute the joint probability based on the sample and the independent case
+#'@title   Likelihood multiplication factor (LMF) or probability multiplication factor (PMF) for compound dry-hot events
+#'@description   Compute joint probabilities of compound dry-hot events and the independent case.
 #'@param mp Precipitation
 #'@param mt Temperature
 #'@param threp Threshold of precipitation (e.g., 50th percentile)
 #'@param thret Threshold of temperature
 #'@references Zscheischler, J. and S. I. Seneviratne (2017). Dependence of drivers affects risks associated with compound events. Science Advances, 3(6): e1700263.
-#'@usage ELMF(mp,mt,threp,thret)
-#' @return ELMF
+#'@usage LMFDH(mp,mt,threp,thret)
+#' @return LMFDH
 #' @export
 #' @examples
 #'mp=matrix(rnorm(120,0,1),ncol=1)
 #'mt=matrix(rnorm(120,0,1),ncol=1)
 #'threp=20
 #'thret=80
-#'res<-ELMF(mp,mt,threp,thret)
+#'res<-LMFDH(mp,mt,threp,thret)
 #'
-ELMF<-function(mp,mt,threp,thret)
+LMFDH<-function(mp,mt,threp,thret)
 {
 
   n <- length(mp)

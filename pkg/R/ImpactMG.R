@@ -1,21 +1,25 @@
-#'@title     Impact  under droughts and hot extremes
+#'@title     Impacts  under droughts and hot extremes
 #'@description    Use the meta-Gaussian model to construct the condtional distribuiton of
-#' the impact variable (Y)  give drought and hot conditions P(Y|P,T)
+#' the impact variable (Y)  give drought and hot conditions P(Y|P,T).
 #'@param P Precipitation or drought indicator corresponding to the impact variable Y
 #'@param T Temperature or heat indicator  corresponding to the impact variable Y
 #'@param Y Impact variable (e.g., Crop yield)
+#'@param u0 Initial condition of (P,T)
 #'@references Feng, S.et al. (2019). Probabilistic evaluation of the impact of compound dry-hot events on global maize yields. Sci. Total. Environ., 689: 1228-1234.
 #'@references Hao, Z.  et al. (2018). A multivariate approach for statistical assessments of compound extremes. J. Hydrol., 565: 87-94.
-#'@usage ImpactMG(P,T,Y)
+#'@usage ImpactMG(P,T,Y,u0)
 #'@export
 #'@examples
 #'P=matrix(rnorm(60,0,1),ncol=1)
 #'T=matrix(rnorm(60,0,1),ncol=1)
 #'Y=matrix(rnorm(60,0,1),ncol=1)
-#'ImpactMG(P,T,Y)
+#'u0=c(-1.2,1.2) # Speficify the compound dry-hot condition
+#'ImpactMG(P,T,Y,u0)
 #'
-ImpactMG<-function(P,T,Y)
+ImpactMG<-function(P,T,Y,u0)
 {
+
+
   # Inputs
   AP=matrix(data=P, ncol = 1)
   AT=matrix(data=T, ncol = 1)
@@ -43,9 +47,6 @@ ImpactMG<-function(P,T,Y)
   yd=SCI;
 
 
-  # Speficify the compound dry-hot condition
-
-  u0=c(-1.2,1.2)
 
   # Get the conditional mean and variance
 

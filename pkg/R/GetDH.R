@@ -1,5 +1,5 @@
 #'@title   Occurrence of compound dry-hot events
-#'@description  Take the precipitation and temperature and extract the occurrence based on thresholds. The binary variable of the dry-hot (or dry-warm) can be obtained.
+#'@description  Extract compound dry-hot occurrences based on thresholds of precipitation and temperature. The binary variable of the dry-hot (or dry-warm) event can be obtained.
 #'
 #'@param mp Precipitation
 #'@param mt Temperature

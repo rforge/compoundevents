@@ -4,7 +4,7 @@ Title: A package for compound events modeling and assessment
 Version: 0.1.0
 Author: Z. Hao
 Maintainer: Z. Hao <z.hao4univ@gmail.com>
-Description: The package extract compound event occurrences, assess potential drivers, predict occurrences and quantify impacts.
+Description: The package is developed to extract compound event occurrences, assess potential driving factors, predict occurrences, and quantify impacts.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
